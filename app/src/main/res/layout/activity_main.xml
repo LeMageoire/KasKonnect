@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.a070419_exemplebluetooth.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+        <CheckBox
+            android:id="@+id/checkboxLED1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:scaleX="1.7"
+            android:scaleY="1.7"
+            android:text="Toggle LED"
+            android:textStyle="bold"
+            tools:layout_conversion_absoluteHeight="32dp"
+            tools:layout_editor_absoluteY="10dp"
+            tools:layout_editor_absoluteX="154dp"
+            tools:layout_conversion_absoluteWidth="103dp" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="RX:"
+                android:textStyle="bold"
+                tools:layout_conversion_absoluteHeight="19dp"
+                tools:layout_editor_absoluteY="52dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_conversion_absoluteWidth="52dp" />
+
+            <TextView
+                android:id="@+id/readBuffer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Read_Buffer"
+                tools:layout_conversion_absoluteHeight="19dp"
+                tools:layout_editor_absoluteY="52dp"
+                tools:layout_editor_absoluteX="51dp"
+                tools:layout_conversion_absoluteWidth="360dp" />
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Status:"
+                android:textStyle="bold"
+                tools:layout_conversion_absoluteHeight="19dp"
+                tools:layout_editor_absoluteY="71dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_conversion_absoluteWidth="69dp" />
+
+            <TextView
+                android:id="@+id/bluetoothStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Bluetooth_Status"
+                tools:layout_conversion_absoluteHeight="19dp"
+                tools:layout_editor_absoluteY="71dp"
+                tools:layout_editor_absoluteX="69dp"
+                tools:layout_conversion_absoluteWidth="343dp" />
+
+
+        <Button
+            android:id="@+id/scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bluetooth ON"
+            tools:layout_conversion_absoluteHeight="48dp"
+            tools:layout_editor_absoluteY="90dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_conversion_absoluteWidth="412dp" />
+
+        <Button
+            android:id="@+id/off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bluetooth OFF"
+            tools:layout_conversion_absoluteHeight="48dp"
+            tools:layout_editor_absoluteY="138dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_conversion_absoluteWidth="412dp" />
+
+        <Button
+            android:id="@+id/PairedBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show paired Devices"
+            tools:layout_conversion_absoluteHeight="48dp"
+            tools:layout_editor_absoluteY="186dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_conversion_absoluteWidth="412dp" />
+
+        <Button
+            android:id="@+id/discover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discover New Devices"
+            tools:layout_conversion_absoluteHeight="48dp"
+            tools:layout_editor_absoluteY="234dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_conversion_absoluteWidth="412dp" />
+
+        <ListView
+            android:id="@+id/devicesListView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:choiceMode="singleChoice"
+            tools:layout_conversion_absoluteHeight="321dp"
+            tools:layout_editor_absoluteY="282dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_conversion_absoluteWidth="412dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
